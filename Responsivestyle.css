@@ -412,7 +412,7 @@
     }
 
     .infertility h2 {
-       text-align: center;
+        text-align: center;
         font-size: 35px;
     }
 
@@ -578,5 +578,13 @@
 @media (max-width: 576px) {
     .navbar-section {
         padding: 0 20px;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        width: 180px;
+        text-align: center;
+        padding: 12px;
+        font-size: 12px;
     }
 }
