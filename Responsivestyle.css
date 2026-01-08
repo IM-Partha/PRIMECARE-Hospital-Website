@@ -421,6 +421,7 @@
         margin-top: 10px;
         text-align: center;
         width: 100%;
+        padding: 20px;
     }
 
     .about-parent .certify {
@@ -694,7 +695,7 @@
 
     /* FAQ TEXT */
     .faq-main .para-one {
-        font-size: 16px;
+        font-size: 30px;
     }
 
     .faq-main h2 {
