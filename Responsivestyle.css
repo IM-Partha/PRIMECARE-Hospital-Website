@@ -406,9 +406,18 @@
         padding: 20px;
     }
 
+    .subhas-mukherjee {
+        margin-top: 0px;
+    }
+
+    .infertility-two {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
     .subhajit-img {
         padding: 20px;
-        margin-top: 30px;
         border-radius: 40px;
         width: 100%;
     }
@@ -427,7 +436,7 @@
 
     .infertility h2 {
         text-align: center;
-        font-size: 35px;
+        font-size: 45px;
     }
 
     .infertility-two p {
@@ -465,7 +474,6 @@
     }
 
     .infertility-two p {
-        text-align: center;
         padding: 0px 20px;
     }
 
@@ -477,7 +485,7 @@
     .why-choose-us-one h2 {
         font-size: 35px;
         color: var(--second-btn);
-        padding: 0px 20px;
+
     }
 
     .faq-main .para-one {
@@ -509,7 +517,7 @@
     }
 
     .faq-main h2 {
-        font-size: 40px;
+        font-size: 33px;
         color: var(--second-btn);
         padding: 0px 20px;
     }
@@ -528,9 +536,18 @@
     }
 
     .free-ivf-content h2 {
-        font-size: 35px;
+        font-size: 45px;
         color: white;
         margin-bottom: 25px;
+    }
+
+    .free-ivf-btn {
+        background-color: white;
+        padding: 10px 20px 10px 20px;
+        color: var(--third-btn);
+        border-radius: 25px;
+        font-size: 12px;
+        text-align: center;
     }
 
     .faq-main p {
@@ -540,7 +557,12 @@
     }
 
     .accordian-main {
-        padding: 20px;
+        padding: 10px;
+    }
+
+    .findus h2 {
+        font-size: 45px;
+        color: var(--second-btn);
     }
 
     .findus-map {
