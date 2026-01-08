@@ -162,6 +162,7 @@ p {
     padding: 10px 20px 10px 20px;
     background-color: var(--third-btn);
     border-radius: 25px;
+    font-size: 18px;
 }
 
 .btn-four .fa-arrow-up {
