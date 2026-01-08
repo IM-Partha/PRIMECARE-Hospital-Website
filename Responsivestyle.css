@@ -105,6 +105,31 @@
     .fa-clock {
         font-size: 26px;
     }
+
+    .FAQ {
+        margin-top: 40px;
+        border-radius: 30px;
+        padding: 30px;
+    }
+
+    .faq-main h2 {
+        font-size: 36px;
+        line-height: 1.3;
+    }
+
+    .faq-main .para-one {
+        font-size: 18px;
+    }
+
+    .contact-box {
+        width: 100%;
+        max-width: 450px;
+        margin-top: 25px;
+    }
+
+    .contact-box .box {
+        gap: 30px !important;
+    }
 }
 
 
@@ -480,6 +505,18 @@
         text-align: center;
     }
 
+    .leave {
+        border: 2px solid var(--primary-color);
+        /* padding: 100px 30px; */
+        border-radius: 40px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        margin-top: 30px;
+    }
+
     .join-today-card {
         gap: 26px;
     }
@@ -637,6 +674,264 @@
         position: relative;
         display: none;
     }
+
+    .treatments-card-main {
+        width: fit-content;
+        height: auto;
+        border-radius: 20px;
+        background-color: #F4F5FF;
+        /* margin-bottom: 40px; */
+        cursor: pointer;
+        transition: all 0.45s cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+
+    .FAQ {
+        margin-top: 30px;
+        padding: 20px;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    /* FAQ TEXT */
+    .faq-main .para-one {
+        font-size: 16px;
+    }
+
+    .faq-main h2 {
+        font-size: 26px;
+        line-height: 1.3;
+    }
+
+    .faq-main p {
+        font-size: 14px;
+    }
+
+    /* CONTACT BOX */
+    .contact-box {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .contact-box .box {
+        flex-direction: row;
+        gap: 15px !important;
+        text-align: center;
+        align-items: center;
+    }
+
+    .contact-box-left,
+    .contact-box-right {
+        text-align: center;
+    }
+
+    .contact-box .heading {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    /* ACCORDION */
+    .accordion-button {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    /* FIND US SECTION */
+    .findus h2 {
+        font-size: 26px;
+    }
+
+    .findus p {
+        font-size: 16px;
+    }
+
+    .our-exparts-team {
+        margin-top: 50px;
+        /* background-image: url(./assets/images/Layer 2 copy 7 (1).png); */
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 40px;
+    }
+
+    /* HEADER TEXT */
+    .gallery .infertility,
+    .gallery .infertility-two {
+        text-align: center;
+    }
+
+    .gallery .infertility h2 {
+        font-size: 26px;
+        line-height: 1.3;
+    }
+
+    .gallery .infertility-two p {
+        font-size: 14px;
+    }
+
+    .gallary-btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    /* GALLERY GRID */
+    .gallery-img {
+        margin-top: 20px;
+    }
+
+    .gallery-img .col-md-4,
+    .gallery-img .col-md-6,
+    .gallery-img .col-md-3 {
+        width: 100%;
+    }
+
+    /* IMAGE HEIGHT RESET */
+    .gallery-img img {
+        height: auto !important;
+        margin-bottom: 12px;
+        border-radius: 12px;
+    }
+
+    .infertility,
+    .infertility-two {
+        text-align: center;
+    }
+
+    .infertility h2 {
+        font-size: 35px;
+        line-height: 1.3;
+    }
+
+    .research-card-main {
+        border: 1px solid var(--btn-color);
+        border-radius: 40px;
+        width: 90%;
+        margin-bottom: 50px;
+        transition: transform 0.3s ease;
+        margin: 10px auto;
+    }
+
+    .infertility-two p {
+        font-size: 14px;
+        /* padding: 20px; */
+        margin-top: 15px !important;
+        margin: 0px;
+    }
+
+    .Shri-Nadda-containt h2 {
+        font-size: 35px;
+        color: var(--second-btn);
+    }
+
+    .Shri-Nadda-containt p {
+        margin-top: 20px;
+        font-size: 15px;
+        color: #063770;
+    }
+
+    .Shri-Nadda-containt .shri-btn {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .Shri-Nadda {
+        padding: 20px;
+    }
+
+    .Shri-Nadda-containt {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: baseline;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .infertility-two .infertility-two-btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    /* HERO IMAGE */
+    .hero-image i {
+        font-size: 48px;
+    }
+
+    /* VIDEO SECTION TITLE */
+    .video-section h2 {
+        font-size: 26px;
+    }
+
+    .video-section p {
+        font-size: 16px;
+    }
+
+    /* VIDEO GRID */
+    .video-card {
+        border-radius: 14px;
+    }
+
+    .video-card iframe {
+        border-radius: 14px;
+    }
+
+    .btn-four {
+        display: inline-flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .research-two {
+        margin: 0px;
+    }
+
+    .infertility-btnss {
+        width: 100%;
+        text-align: center;
+    }
+
+    .video-section,
+    .video-card {
+        /* max-width: 1100px; */
+        margin-left: auto;
+        width: 400px;
+        margin-right: auto;
+        margin-bottom: 25px;
+    }
+    .leave-a-reply{
+        display: none;
+    }
+
+
+    /* Footer */
+
+.footer-section {
+        text-align: center;
+        padding: 40px 0;
+    }
+
+    .newsletter {
+        flex-direction: column;
+    }
+
+    .newsletter input,
+    .newsletter button {
+        border-radius: 8px;
+        width: 100%;
+    }
+
+    .newsletter button {
+        margin-top: 8px;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .footer-bottom-links {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 576px) {
@@ -655,4 +950,27 @@
     .form-section {
         margin-top: 0px;
     }
+
+    .sperm-list {
+        line-height: 28px;
+        font-size: 15px;
+    }
+
+    .treatments-card-main {
+        width: fit-content;
+        height: auto;
+        border-radius: 20px;
+        background-color: #F4F5FF;
+        /* margin-bottom: 40px; */
+        cursor: pointer;
+    }
+
+    .our-exparts-team {
+        margin-top: 50px;
+        /* background-image: url(./assets/images/Layer 2 copy 7 (1).png); */
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 40px;
+    }
+
 }

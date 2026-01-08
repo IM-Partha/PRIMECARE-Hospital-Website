@@ -1,15 +1,15 @@
 // HAMBARGER MENU ICONS
-    const hamburger = document.getElementById("hamburger");
-    const navLinks = document.getElementById("navLinks");
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("navLinks");
 
-    hamburger.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-    });
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
 
 // HAMBARGER MENU ICONS
 
-if (document.getElementById("slider")) {
-  var slider = new Splide("#slider", {
+document.querySelectorAll('.splide').forEach(function (el) {
+  new Splide(el, {
     type: "loop",
     perPage: 3,
     gap: 20,
@@ -17,15 +17,20 @@ if (document.getElementById("slider")) {
     rewind: true,
     pagination: true,
     focus: "center",
+
     breakpoints: {
-      960: {
+      991: {
+        perPage: 2,
+        gap: 12,
+      },
+      767: {
         perPage: 1,
-        gap: 5,
+        gap: 8,
       },
     },
-  });
-  slider.mount();
-}
+  }).mount();
+});
+
 
 if (document.getElementById("slider2")) {
   var slider = new Splide("#slider2", {
@@ -39,6 +44,10 @@ if (document.getElementById("slider2")) {
     breakpoints: {
       960: {
         perPage: 1,
+        gap: 5,
+      },
+      600: {
+        perPage: 2,
         gap: 5,
       },
     },
