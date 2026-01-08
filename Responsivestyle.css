@@ -631,7 +631,7 @@
     }
 
     .findus-map {
-        padding: 20px;
+        margin-top: 20px;
     }
 
     .card-counter-main {
@@ -713,7 +713,7 @@
     }
 
     .contact-box .box {
-        flex-direction: row;
+        flex-direction: column;
         gap: 15px !important;
         text-align: center;
         align-items: center;
@@ -820,12 +820,14 @@
     .Shri-Nadda-containt h2 {
         font-size: 35px;
         color: var(--second-btn);
+        text-align: center;
     }
 
     .Shri-Nadda-containt p {
         margin-top: 20px;
         font-size: 15px;
         color: #063770;
+        text-align: center;
     }
 
     .Shri-Nadda-containt .shri-btn {
@@ -895,43 +897,49 @@
     .video-card {
         /* max-width: 1100px; */
         margin-left: auto;
-        width: 400px;
+        width: 300px;
         margin-right: auto;
         margin-bottom: 25px;
     }
-    .leave-a-reply{
+
+    .leave-a-reply {
         display: none;
     }
 
+    .book-a-consultation {
+        padding: 10px 20px 10px 20px;
+        background-color: var(--second-btn);
+        color: white;
+        border-radius: 10px;
+        text-decoration: none;
+        font-size: 13px;
+    }
 
     /* Footer */
-
-.footer-section {
-        text-align: center;
-        padding: 40px 0;
+    .logo img {
+        width: 30%;
+        margin-bottom: 30px;
     }
 
-    .newsletter {
-        flex-direction: column;
+    .footer-section {
+        text-align: start;
+        margin-top: 40px;
+        padding: 20px;
     }
 
-    .newsletter input,
-    .newsletter button {
-        border-radius: 8px;
-        width: 100%;
+    .footer-box {
+        margin-bottom: 30px;
     }
 
-    .newsletter button {
-        margin-top: 8px;
+    /* Hide newsletter input & button */
+    .mobile-hide {
+        display: none;
     }
 
     .social-links {
         justify-content: center;
     }
 
-    .footer-bottom-links {
-        justify-content: center;
-    }
 }
 
 @media (max-width: 576px) {
