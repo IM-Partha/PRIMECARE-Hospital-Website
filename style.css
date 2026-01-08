@@ -676,20 +676,29 @@ p {
     height: 100%;
     background-color: var(--third-btn);
     color: white;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    border-right: 1px solid white;
+    padding: 20px;
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
 }
 
+.info-box h5 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.info-box span,
+.info-box a {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* ICONS */
 .fa-clock {
     font-size: 30px;
 }
 
 .fa-circle-arrow-up {
     transform: rotate(45deg);
-    font-size: 25px;
+    font-size: 22px;
 }
 
 /* About Us */
