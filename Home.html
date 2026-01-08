@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Prime Care</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -17,7 +17,9 @@
         href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Responsivestyle.css">
 </head>
+
 <body>
     <!-- Top Bar -->
     <section class="top-bar-section ">
@@ -58,154 +60,126 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="NAVBAR">
+
+                        <!-- Logo -->
                         <div class="nav-image">
                             <img class="img-fluid" src="./assets/images/logo-removebg-preview.png" alt="logo" />
                         </div>
-                        <div>
-                            <nav class="nav-links">
-                                <i class="fa-regular fa-house"></i>
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <a href="">About us</a>
-                                    <i class="fa-solid fa-angle-down"></i>
-                                </div>
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <a href="About us">Treatments</a>
-                                    <i class="fa-solid fa-angle-down"></i>
-                                </div>
-                                <a href="">Doctors</a>
-                                <a href="">blog</a>
-                                <a href="">Contact Us</a>
-                                <a href="">FAQ</a>
-                            </nav>
+
+                        <!-- Hamburger Icon (Mobile) -->
+                        <!-- Hamburger Icon (Mobile) -->
+                        <div class="hamburger" id="hamburger">
+                            <i class="fa-solid fa-bars"></i>
                         </div>
-                        <a class="btn" href="">Get CallBack <span><i
-                                    class="fa-solid fa-circle-arrow-right"></i></span></a>
+
+                        <nav class="nav-links" id="navLinks">
+                            <i class="fa-regular fa-house"></i>
+
+                            <div class="d-flex align-items-center justify-content-center">
+                                <a href="">About us</a>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+
+                            <div class="d-flex justify-content-center align-items-center">
+                                <a href="">Treatments</a>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+
+                            <a href="">Doctors</a>
+                            <a href="">Blog</a>
+                            <a href="">Contact Us</a>
+                            <a href="">FAQ</a>
+                        </nav>
+                        <!-- CTA Button -->
+                        <a class="btn" href="">
+                            Get CallBack
+                            <span><i class="fa-solid fa-circle-arrow-right"></i></span>
+                        </a>
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- carousel -->
     <section class="carousel-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                    <div id="carouselExampleCaptions" class="carousel slide">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                    class="active"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- Slides -->
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <img src="./assets/images/carousel.png" class="d-block w-100" alt="IVF Banner">
+
+                    <div class="carousel-caption">
+                        <h1>
+                            <span>Best IVF Center</span>
+                            in Kolkata – Trusted Fertility Experts
+                        </h1>
+                        <div class="trusted">
+                            <div class="trusted-item"><i class="fa-solid fa-circle-check"></i> High success rates</div>
+                            <div class="trusted-item"><i class="fa-solid fa-circle-check"></i> Expert specialists</div>
+                            <div class="trusted-item"><i class="fa-solid fa-circle-check"></i> Financial support</div>
                         </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="./assets/images/carousel.png" class="d-block w-100 img-fluid" alt="...">
 
-                                <div class="carousel-caption d-none d-md-block text-start top-0 start-0">
-                                    <h1><span>Best IVF Center</span> in </br> Kolkata – Trusted </br> Fertility Experts
-                                    </h1>
-                                    <div class="trsuted">
-                                        <div>
-                                            <div class=" d-flex align-items-center trsuted-links">
-                                                <i class="fa-solid fa-circle-check"></i>
-                                                <span class="para">High success rates</span>
-                                            </div>
-                                            <div class="d-flex align-items-center trsuted-links">
-                                                <i class="fa-solid fa-circle-check"></i>
-                                                <span class="para">Expert specialists</span>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex align-items-center trsuted-links">
-                                            <i class="fa-solid fa-circle-check"></i>
-                                            <span class="para">Financial support</span>
-                                        </div>
-                                    </div>
-                                    <div class="consultation">
-                                        <a href="">Book Free Consultation<span><i
-                                                    class="fa-solid fa-arrow-up"></i></span></a>
-                                        <a class="btn" href="">Learn About Treatments<span><i
-                                                    class="fa-solid fa-arrow-up"></i></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item active">
-                                <img src="./assets/images/carousel.png" class="d-block w-100 img-fluid" alt="...">
+                        <div class="consultation">
+                            <a href="#" class="primary-btn">Book Free Consultation</a>
+                            <a href="#" class="secondary-btn">Learn About Treatments</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <img src="./assets/images/carousel.png" class="d-block w-100" alt="IVF Banner">
 
-                                <div class="carousel-caption d-none d-md-block text-start top-0 start-0">
-                                    <h1><span>Best IVF Center</span> in </br> Kolkata – Trusted </br> Fertility Experts
-                                    </h1>
-                                    <div class="trsuted">
-                                        <div>
-                                            <div class=" d-flex align-items-center trsuted-links">
-                                                <i class="fa-solid fa-circle-check"></i>
-                                                <span class="para">High success rates</span>
-                                            </div>
-                                            <div class="d-flex align-items-center trsuted-links">
-                                                <i class="fa-solid fa-circle-check"></i>
-                                                <span class="para">Expert specialists</span>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex align-items-center trsuted-links">
-                                            <i class="fa-solid fa-circle-check"></i>
-                                            <span class="para">Financial support</span>
-                                        </div>
-                                    </div>
-                                    <div class="consultation">
-                                        <a href="">Book Free Consultation<span><i
-                                                    class="fa-solid fa-arrow-up"></i></span></a>
-                                        <a class="btn" href="">Learn About Treatments<span><i
-                                                    class="fa-solid fa-arrow-up"></i></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item active">
-                                <img src="./assets/images/carousel.png" class="d-block w-100 img-fluid" alt="...">
+                    <div class="carousel-caption">
+                        <h1>
+                            <span>Best IVF Center</span>
+                            in Kolkata – Trusted Fertility Experts
+                        </h1>
+                        <div class="trusted">
+                            <div class="trusted-item"><i class="fa-solid fa-circle-check"></i> High success rates</div>
+                            <div class="trusted-item"><i class="fa-solid fa-circle-check"></i> Expert specialists</div>
+                            <div class="trusted-item"><i class="fa-solid fa-circle-check"></i> Financial support</div>
+                        </div>
 
-                                <div class="carousel-caption d-none d-md-block text-start top-0 start-0">
-                                    <h1><span>Best IVF Center</span> in </br> Kolkata – Trusted </br> Fertility Experts
-                                    </h1>
-                                    <div class="trsuted">
-                                        <div>
-                                            <div class=" d-flex align-items-center trsuted-links">
-                                                <i class="fa-solid fa-circle-check"></i>
-                                                <span class="para">High success rates</span>
-                                            </div>
-                                            <div class="d-flex align-items-center trsuted-links">
-                                                <i class="fa-solid fa-circle-check"></i>
-                                                <span class="para">Expert specialists</span>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex align-items-center trsuted-links">
-                                            <i class="fa-solid fa-circle-check"></i>
-                                            <span class="para">Financial support</span>
-                                        </div>
-                                    </div>
-                                    <div class="consultation">
-                                        <a href="">Book Free Consultation<span><i
-                                                    class="fa-solid fa-arrow-up"></i></span></a>
-                                        <a class="btn" href="">Learn About Treatments<span><i
-                                                    class="fa-solid fa-arrow-up"></i></span></a>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="consultation">
+                            <a href="#" class="primary-btn">Book Free Consultation</a>
+                            <a href="#" class="secondary-btn">Learn About Treatments</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <img src="./assets/images/carousel.png" class="d-block w-100" alt="IVF Banner">
 
+                    <div class="carousel-caption">
+                        <h1>
+                            <span>Best IVF Center</span>
+                            in Kolkata – Trusted Fertility Experts
+                        </h1>
+                        <div class="trusted">
+                            <div class="trusted-item"><i class="fa-solid fa-circle-check"></i> High success rates</div>
+                            <div class="trusted-item"><i class="fa-solid fa-circle-check"></i> Expert specialists</div>
+                            <div class="trusted-item"><i class="fa-solid fa-circle-check"></i> Financial support</div>
+                        </div>
 
-                            <button class="carousel-control-prev" type="button"
-                                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button"
-                                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
+                        <div class="consultation">
+                            <a href="#" class="primary-btn">Book Free Consultation</a>
+                            <a href="#" class="secondary-btn">Learn About Treatments</a>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
     <!-- Key Achievements and Network of -->
     <section class="achievements">
@@ -270,8 +244,8 @@
     <!-- Form Section -->
     <section class="form-section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="row gx-lg-5 gx-3">
+                <div class="col-lg-6 col-md-12 col-sm-12">
                     <div class="form-section-one">
                         <img class="img-fluid" src="./assets/images/baby.png" />
                         <div class="play-btn">
@@ -279,44 +253,46 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 ab">
-                    <form class="form-section-two">
-                        <h2>Leave a Reply</h2>
-                        <div class="form-one mt-5">
-                            <div>
-                                <label>Name</label>
-                                <input type="text" />
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="ab">
+                        <form class="form-section-two">
+                            <h2>Leave a Reply</h2>
+                            <div class="form-one mt-5">
+                                <div>
+                                    <label>Name</label>
+                                    <input type="text" />
+                                </div>
+                                <div>
+                                    <label>Surname</label>
+                                    <input type="text" />
+                                </div>
                             </div>
-                            <div>
-                                <label>Surname</label>
-                                <input type="text" />
+                            <div class="form-two">
+                                <div>
+                                    <label>Email</label>
+                                    <input type="text" />
+                                </div>
+                                <div>
+                                    <label>Phone</label>
+                                    <input type="text" />
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-two">
-                            <div>
-                                <label>Email</label>
-                                <input type="text" />
+                            <div class="d-flex flex-column form-three">
+                                <label>Specify your need</label>
+                                <input type="text">
                             </div>
-                            <div>
-                                <label>Phone</label>
-                                <input type="text" />
-                            </div>
-                        </div>
-                        <div class="d-flex flex-column form-three">
-                            <label>Specify your need</label>
-                            <input type="text">
-                        </div>
-                        <a class="get-call-back" href="">Get Call Back
-                            <span><i class="fa-regular fa-circle-right"></i></span>
-                        </a>
-                    </form>
+                            <a class="get-call-back" href="">Get Call Back
+                                <span><i class="fa-regular fa-circle-right"></i></span>
+                            </a>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- Info Section -->
     <section>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-3 col-md-6">
                     <div class="info-box">
@@ -332,7 +308,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="info-box">
                         <h5>Location</h5>
-                        <span>58 A/1 Phool Bagan, Kankurgachi,</br> Kolkata, West Bengal 700054,</br> India</span>
+                        <span>58 A/1 Phool Bagan, Kankurgachi,</br> Kolkata, West Bengal 700054, India</span>
                         <div class="d-flex align-items-center gap-3">
                             <a class="text-decoration-none text-white" href="">Click to Navigate</a>
                             <i class="fa-solid fa-circle-arrow-up"></i>
@@ -341,7 +317,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="info-box">
-                        <h5>Book An </br>Appointment</h5>
+                        <h5>Book An Appointment</h5>
                         <div class="d-flex align-items-center gap-3">
                             <a class="text-decoration-none text-white" href="">Click to Navigate</a>
                             <i class="fa-solid fa-circle-arrow-up"></i>
@@ -350,7 +326,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="info-box">
-                        <h5>Emergency </br>Helpline</h5>
+                        <h5>Emergency Helpline</h5>
                         <div class="d-flex align-items-center gap-3">
                             <i class="fa-regular fa-clock"></i>
                             <div>
@@ -360,7 +336,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row about-us">
+            <!-- <div class="row about-us">
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <img class="img-fluid" src="./assets/images/Group_47-removebg-preview.png" alt="">
                 </div>
@@ -379,6 +355,35 @@
                         </div>
                         <a class="btn-three text-capitalize" href="">get Callback<i
                                 class="  fa-solid fa-circle-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+    <!-- About US -->
+    <section>
+        <div class="container">
+            <div class="row about-us">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <img class="img-fluid" src="./assets/images/Group_47-removebg-preview.png" alt="">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="about-parent">
+                        <p class="text-uppercase">About us</p>
+                        <h2>
+                            Your Parenthood Journey Starts at PRIMECARE
+                        </h2>
+                        <span>At our fertility clinic, we understand that every journey </br> to parenthood is unique.
+                            With
+                            compassion, advanced </br> reproductive technology.</span>
+                        <div class="certify">
+                            <p><i class="fa-solid fa-circle-check"></i>Expert care from trained fertility specialist</p>
+                            <p><i class="fa-solid fa-circle-check"></i>Proven track records successful outcome</p>
+                        </div>
+                        <div class="about-us-btn-main">
+                            <a class="btn-three text-capitalize" href="">get Callback<i
+                                    class="  fa-solid fa-circle-arrow-right"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -401,8 +406,10 @@
                                 to
                                 help you achieve your </br> dream of parenthood.</span>
                         </div>
-                        <a class="outline-btn" href="">Know More<span><i
-                                    class="fa-solid fa-circle-arrow-up"></i></span></a>
+                        <div class="subhajit-btn">
+                            <a class="outline-btn" href="">Know More<span><i
+                                        class="fa-solid fa-circle-arrow-up"></i></span></a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
@@ -453,7 +460,10 @@
                             <p>“Men's infertility is the inability of a male to cause a pregnancy in a female
                                 partner,
                                 often diagnosed after a year of unprotected intercourse. ”</p>
-                            <a class="btn-four" href="">contact us<span><i class="fa-solid fa-arrow-up"></i></span></a>
+                            <div class="infertility-two-btn">
+                                <a class="btn-four" href="">contact us<span><i
+                                            class="fa-solid fa-arrow-up"></i></span></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -484,8 +494,10 @@
                                     pregnancy in a
                                     female partner,</p>
                             </div>
-                            <a class="btn-four mt-5" href="">View Details<span><i
-                                        class="fa-solid fa-arrow-up"></i></span></a>
+                            <div class="card-btn-new-0">
+                                <a class="btn-four mt-5" href="">View Details<span><i
+                                            class="fa-solid fa-arrow-up"></i></span></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -521,7 +533,10 @@
                         <div class="infertility-two">
                             <p>““Men's infertility is the inability of a male to cause a pregnancy in a female partner,
                                 often diagnosed after a year of unprotected intercourse. ”</p>
-                            <a class="btn-four" href="">contact us<span><i class="fa-solid fa-arrow-up"></i></span></a>
+                            <div class="infertility-btns">
+                                <a class="btn-four" href="">contact us<span><i
+                                            class="fa-solid fa-arrow-up"></i></span></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -603,7 +618,7 @@
                             </div>
                         </div>
                     </div>
-                    <form class="">
+                    <form class="form-class">
                         <div class="join-form gap-5">
                             <div class="d-flex flex-column">
                                 <label>Name</label>
@@ -645,7 +660,10 @@
                             <p>We believe in providing clear, upfront pricing for all IVF treatments, so you can
                                 make informed decisions without unexpected costs. Our transparent pricing
                                 ensures you know exactly what to expect, with no hidden fees.</p>
-                            <a class="btn-four" href="">contact us<span><i class="fa-solid fa-arrow-up"></i></span></a>
+                            <div class="infertility-btns">
+                                <a class="btn-four" href="">contact us<span><i
+                                            class="fa-solid fa-arrow-up"></i></span></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -701,6 +719,7 @@
         </div>
     </section>
     <!-- Why Choose us -->
+
     <section class="why-choose-us">
         <div class="container">
             <div class="row">
@@ -709,49 +728,57 @@
                         <p class="text-uppercase para-one">Why Choose us</p>
                         <h2>Our Infrastructure is the backbone of <span>your health growth</span></h2>
                         <div class="para-data">
-                            <span>We don't just focus on numbers—we focus on people. Every milestone represents a
+                            <span>
+                                We don't just focus on numbers—we focus on people. Every milestone represents a
                                 family we've helped, a challenge we've overcome, and a journey we've shared with our
-                                patients.</span>
+                                patients.
+                            </span>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                    <img class="why-choose-us-one-img img-fluid" src="./assets/images/f-dr.jpg" />
+                    <img class="why-choose-us-one-img img-fluid" src="./assets/images/f-dr.jpg" alt="Doctor">
                 </div>
             </div>
-            <div class="row  why-choose-us-tow-main">
+
+            <div class="row why-choose-us-tow-main">
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                    <img class="why-choose-us-tow-img img-fluid" src="./assets/images/monoroma.webp" />
+                    <img class="why-choose-us-tow-img img-fluid" src="./assets/images/monoroma.webp" alt="Clinic">
                 </div>
+
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="why-choose-us-tow">
                         <ul class="list-unstyled">
                             <li><span><i class="fa-solid fa-circle-check"></i></span> legacy of trust & care</li>
-                            <li> <span><i class="fa-solid fa-circle-check"></i></span>Cutting-edge fertility solutions
+                            <li><span><i class="fa-solid fa-circle-check"></i></span> Cutting-edge fertility solutions
                             </li>
-                            <li><span><i class="fa-solid fa-circle-check"></i></span>Transforming dreams into reality
+                            <li><span><i class="fa-solid fa-circle-check"></i></span> Transforming dreams into reality
                             </li>
                         </ul>
+
                         <div class="row card-counter-main">
                             <div class="col-lg-4 col-md-4">
                                 <div class="card-counter">
-                                    <p>15+</p>
+                                    <p data-target="15">0</p>
                                     <span>Years of Experience</span>
                                 </div>
                             </div>
+
                             <div class="col-lg-4 col-md-4">
                                 <div class="card-counter">
-                                    <p>98%</p>
+                                    <p data-target="98">0</p>
                                     <span>Patient satisfaction</span>
                                 </div>
                             </div>
+
                             <div class="col-lg-4 col-md-4">
                                 <div class="card-counter">
-                                    <p>1K+</p>
+                                    <p data-target="1000">0</p>
                                     <span>Happy families</span>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -929,7 +956,7 @@
                             <div>
                                 <span><i class="fa-solid fa-location-dot"></i>Visit Us:</span>
                                 <p>58 A/1 Phool Bagan
-Kankurgachi,</br> Kolkata, West Bengal 700054, India</p>
+                                    Kankurgachi,</br> Kolkata, West Bengal 700054, India</p>
                             </div>
                         </div>
                     </div>
@@ -960,7 +987,10 @@ Kankurgachi,</br> Kolkata, West Bengal 700054, India</p>
                         <div class="infertility-two">
                             <p>Our experienced IVF specialists, nurses, and support staff are here to guide you with
                                 compassion, expertise, and personalized care every step of the way.</p>
-                            <a class="btn-four" href="">contact us<span><i class="fa-solid fa-arrow-up"></i></span></a>
+                            <div class="infertility-btns">
+                                <a class="btn-four" href="">contact us<span><i
+                                            class="fa-solid fa-arrow-up"></i></span></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -989,28 +1019,30 @@ Kankurgachi,</br> Kolkata, West Bengal 700054, India</p>
                 </div>
             </div>
             <div class="row mt-5">
-                <div class="col-lg-3 col-md-3 col-sm-12">
-                    <div class="text-center stats-box">
-                        <h2>70,000+</h2>
-                        <span>Pregnencies</span>
+                <div class="ultimate-counter">
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="text-center stats-box">
+                            <h2 data-target="70000">0</h2>
+                            <span>Pregnencies</span>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12">
-                    <div class="text-center stats-box">
-                        <h2>98%</h2>
-                        <span>success Rate</span>
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="text-center stats-box">
+                            <h2 data-target="98">0</h2>
+                            <span>success Rate</span>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12">
-                    <div class="text-center stats-box">
-                        <h2>12,600+</h2>
-                        <span>Case studies</span>
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="text-center stats-box">
+                            <h2 data-target="12600">0</h2>
+                            <span>Case studies</span>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-12">
-                    <div class="text-center stats-box-border-less">
-                        <h2>126,000+</h2>
-                        <span>Total patient view</span>
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="text-center stats-box-border-less">
+                            <h2 data-target="126000">0</h2>
+                            <span>Total patient view</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1032,7 +1064,10 @@ Kankurgachi,</br> Kolkata, West Bengal 700054, India</p>
                         <div class="infertility-two">
                             <p>Stay informed with expert insights, fertility tips, and the latest advancements in
                                 IVF to support your parenthood journey.</p>
-                            <a class="btn-four" href="">contact us<span><i class="fa-solid fa-arrow-up"></i></span></a>
+                            <div class="gallary-btn">
+                                <a class="btn-four" href="">contact us<span><i
+                                            class="fa-solid fa-arrow-up"></i></span></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1095,8 +1130,10 @@ Kankurgachi,</br> Kolkata, West Bengal 700054, India</p>
                         <div class="infertility-two">
                             <p>Our experienced IVF specialists, nurses, and support staff are here to guide you with
                                 compassion, expertise, and personalized care every step of the way.</p>
-                            <a class="btn-four" href="">View all videos<span><i
-                                        class="fa-solid fa-arrow-up"></i></span></a>
+                            <div class="infertility-two-btn">
+                                <a class="btn-four" href="">View all videos<span><i
+                                            class="fa-solid fa-arrow-up"></i></span></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1143,12 +1180,11 @@ Kankurgachi,</br> Kolkata, West Bengal 700054, India</p>
                                 allowfullscreen></iframe>
                         </div>
                     </div>
-                    <div class="mt-5 d-flex justify-content-center">
-                        <a class="btn-four" href="">View all ResResearch<span><i
-                                    class="fa-solid fa-arrow-up"></i></span></a>
-                    </div>
                 </div>
-
+                <div class="mt-5 d-flex justify-content-center">
+                    <a class="btn-four" href="">View all ResResearch<span><i
+                                class="fa-solid fa-arrow-up"></i></span></a>
+                </div>
             </div>
     </section>
     <!-- Research Topics at Center -->
@@ -1515,14 +1551,14 @@ Kankurgachi,</br> Kolkata, West Bengal 700054, India</p>
                                     <div><i class="fa-solid fa-location-dot"></i></div>
                                     <div>
                                         <span>58 A/1 Phool Bagan
-Kankurgachi, Kolkata, </br> West Bengal 700054, India</span>
+                                            Kankurgachi, Kolkata, </br> West Bengal 700054, India</span>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center gap-2">
                                     <div><i class="fa-regular fa-envelope"></i></div>
                                     <div>
                                         <span>subhajit.ivf@gmail.com</br>
-                                            </span>
+                                        </span>
                                     </div>
                                 </div>
                                 <div class="d-flex align-items-center gap-2">
@@ -1596,8 +1632,6 @@ Kankurgachi, Kolkata, </br> West Bengal 700054, India</span>
             </div>
         </div>
     </footer>
-
-
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
